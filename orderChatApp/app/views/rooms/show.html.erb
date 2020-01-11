@@ -1,5 +1,6 @@
 <h1>Chat room</h1>
-<div id='messages'>
+<%# ここのdata-room_idを使ってjs側で部屋を見分ける%>
+<div id='messages' data-room_id="<%= @room.id %>">
   <%= render @messages %>
 </div>
 
